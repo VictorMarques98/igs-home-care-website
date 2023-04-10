@@ -47,10 +47,7 @@ const itemData = [
 
 const Gallery = () => {
   return (
-    <Box
-      component="section"
-      sx={styles.section}
-    >
+    <Box component="section" >
       <Container
         sx={styles.content}
         maxWidth="xl"
@@ -65,8 +62,8 @@ const Gallery = () => {
           variant="subtitle1"
           sx={styles.subtitle}
         >
-          We at The Gardeny are proud to offer carefully designed 
-          landscapes crafted to suit our commercial clients’ 
+          We at The Gardeny are proud to offer carefully designed
+          landscapes crafted to suit our commercial clients’
           preferences while prioritizing sustainability.
         </Typography>
         <Box

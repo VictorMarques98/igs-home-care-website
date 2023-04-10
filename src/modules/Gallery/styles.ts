@@ -1,14 +1,10 @@
-const section = {
-
-};
-
 const content = {
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
   justifyContent: 'center',
   textAlign: 'center',
-  padding: '8rem 1rem',
+  padding: { xs: '2rem 1rem', md: '8rem 1rem' },
   gap: '2rem'
 };
 
@@ -50,12 +46,11 @@ const imageList = {
 };
 
 const imageItem = {
-  maxWidth: { xs: '100%', md: '30%' },
-  minWidth: { xs: '100%', md: '500px' },
+  maxWidth: { xs: '600px', md: '30%' },
+  minWidth: { xs: 'inherit', md: '500px' },
 };
 
 const styles = {
-  section,
   title,
   content,
   subtitle,
