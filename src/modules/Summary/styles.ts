@@ -14,7 +14,7 @@ const content = {
   flexDirection: 'column',
   alignItems: 'space-between',
   justifyContent: 'flex-start',
-  boxShadow: '1px 20px 17px -5px #0000007a',
+  boxShadow: '1px 20px 17px -5px #00000010',
   margin: { xs: "0", md: "0 2rem" },
 };
 

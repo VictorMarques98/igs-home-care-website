@@ -1,7 +1,7 @@
 import IntroImg from "../../assets/Introimg.jpeg";
 
 const section = {
-  height: '80vh',
+  height: '100vh',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

@@ -1,6 +1,5 @@
-import { Box } from '@mui/material'
 import { Header } from './components/Header'
-import { Introduction, Summary } from './modules'
+import { Gallery, Introduction, Summary } from './modules'
 
 function App() {
   return (
@@ -9,6 +8,7 @@ function App() {
       <main>
         <Introduction />
         <Summary />
+        <Gallery />
       </main>
     </>
   )

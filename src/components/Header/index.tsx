@@ -10,12 +10,16 @@ import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import { useScrollTrigger } from "@mui/material";
 
 import styles from './styles';
 
 const pages = ["Home", "About", "Services", "Gallery", "Reviews"];
 
 function Header() {
+  // const trigger = useScrollTrigger();
+
+  // console.log(trigger)
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -27,17 +31,10 @@ function Header() {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <AppBar
