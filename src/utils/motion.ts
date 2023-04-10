@@ -19,7 +19,7 @@ export const navVariants = {
   },
 };
 
-export const textVariant = (delay: number) => ({
+export const simpleFadeIn = (delay: number) => ({
   hidden: {
     y: 50,
     opacity: 0,

@@ -1,9 +1,13 @@
-import { 
-  Box, 
-  Container, 
+import {
+  Box,
+  Container,
   Typography,
-   Button 
-  } from "@mui/material";
+  Button
+} from "@mui/material";
+
+import { motion } from 'framer-motion';
+
+import { simpleFadeIn } from '../../utils/motion';
 
 import styles from './styles';
 
@@ -16,10 +20,16 @@ const Introduction = () => {
       <Container
         sx={styles.content}
         maxWidth="xl"
+        component={motion.div}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
       >
         <Typography
           variant="h1"
           sx={styles.title}
+          component={motion.h1}
+          variants={simpleFadeIn(0.65)}
         >
           <Box
             component="img"
@@ -32,10 +42,16 @@ const Introduction = () => {
         <Typography
           variant="subtitle1"
           sx={styles.subtitle}
+          component={motion.p}
+          variants={simpleFadeIn(1)}
         >
           Provides hassle-free backyard transformations with artistic solutions.
         </Typography>
-        <Box sx={styles.actionsContainer}>
+        <Box
+          sx={styles.actionsContainer}
+          component={motion.div}
+          variants={simpleFadeIn(1.5)}
+        >
           <Button
             sx={styles.scrollButton}
             variant="outlined">
@@ -48,6 +64,7 @@ const Introduction = () => {
             Request an estimate
           </Button>
         </Box>
+
       </Container>
     </Box>
   )

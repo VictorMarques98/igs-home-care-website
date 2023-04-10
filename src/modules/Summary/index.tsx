@@ -3,13 +3,13 @@ import React from 'react';
 import styles from './styles';
 
 import { motion } from 'framer-motion';
-import { textVariant } from '../../utils/motion';
+import { simpleFadeIn } from '../../utils/motion';
 
-import { 
-  Box, 
-  Container, 
-  Link, 
-  Typography 
+import {
+  Box,
+  Container,
+  Link,
+  Typography
 } from "@mui/material";
 import OtherHousesOutlinedIcon from '@mui/icons-material/OtherHousesOutlined';
 
@@ -49,7 +49,7 @@ const Summary = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ amount: 0.25 }}
-      variants={textVariant(1)}
+      variants={simpleFadeIn(1)}
     >
       <Container
         sx={styles.content}
@@ -89,7 +89,7 @@ const Summary = () => {
                   Read more
                 </Link>
               </Box>
-              {index !== services.length - 1 && 
+              {index !== services.length - 1 &&
                 <Box sx={styles.divider} />
               }
             </React.Fragment>
