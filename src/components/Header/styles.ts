@@ -1,6 +1,7 @@
 const appBar = {
   backgroundColor: 'transparent', 
   boxShadow: 'none',
+  transition: "all 0.3s ease-in-out",
 };
 
 const logoName = {
@@ -49,7 +50,7 @@ const menuWrapper = {
 
 const menuItem = {
   my: 2,
-  color: "#fff",
+  color: "inherit",
   display: "block",
   textTransform: "inherit",
   fontSize: "1rem",
@@ -58,6 +59,7 @@ const menuItem = {
   fontWeight: 400,
   '&:hover': {
     color: "#d6d2d2",
+    backgroundColor: "transparent",
   }
 };
 

@@ -1,67 +1,47 @@
-import { Box, Container, Typography, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 import styles from './styles';
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    author: '@bkristastucchio',
+    img: './1.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-    author: '@rollelflex_graphy726',
+    img: './3.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
-    author: '@helloimnik',
+    img: './3.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-    author: '@nolanissac',
+    img: './4.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-    author: '@hjrc33',
+    img: './1.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-    author: '@arwinneil',
+    img: './3.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
-    author: '@tjdragotta',
+    img: './3.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-    author: '@katie_wasserman',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
-    author: '@silverdalex',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-    author: '@shelleypauls',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-    author: '@peterlaster',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
-    author: '@southside_customs',
+    img: './4.jpeg',
+    title: 'Garden',
+    author: 'description',
   },
 ];
 
@@ -85,14 +65,20 @@ const Gallery = () => {
           variant="subtitle1"
           sx={styles.subtitle}
         >
-          We at The Gardeny are proud to offer carefully designed landscapes crafted to suit our commercial clients’ preferences while prioritizing sustainability.
+          We at The Gardeny are proud to offer carefully designed 
+          landscapes crafted to suit our commercial clients’ 
+          preferences while prioritizing sustainability.
         </Typography>
-        <ImageList
-          sx={{ width: '100%', maxWidth: '900px' }}
-          gap={30}
+        <Box
+          component="ul"
+          sx={styles.imageList}
         >
           {itemData.map((item) => (
-            <ImageListItem key={item.img} sx={{ textAlign: 'left' }}>
+            <Box
+              component="li"
+              sx={styles.imageItem}
+              key={item.img}
+            >
               <Box
                 component="img"
                 src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -101,28 +87,9 @@ const Gallery = () => {
                 loading="lazy"
                 sx={styles.image}
               />
-              <ImageListItemBar
-                title={
-                  <Typography
-                    variant="caption"
-                    sx={styles.imageTitle}
-                  >
-                    {item.title}
-                  </Typography>
-                }
-                subtitle={
-                  <Typography
-                    variant="caption"
-                    sx={styles.imageAuthor}
-                  >
-                    {item.author}
-                  </Typography>
-                }
-                position="below"
-              />
-            </ImageListItem>
+            </Box>
           ))}
-        </ImageList>
+        </Box>
       </Container>
     </Box>
   )

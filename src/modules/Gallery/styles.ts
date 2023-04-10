@@ -8,19 +8,19 @@ const content = {
   flexDirection: 'column',
   justifyContent: 'center',
   textAlign: 'center',
-  padding: '5rem 1rem',
+  padding: '8rem 1rem',
   gap: '2rem'
 };
 
 const title = {
   fontWeight: 200,
-  fontSize: { xs: '5rem', md: '4rem' },
+  fontSize: { xs: '2.5rem', md: '4rem' },
   color: '#2a7d2e'
 };
 
 const subtitle = {
-  fontWeight: 200,
-  maxWidth: '60%',
+  fontWeight: 300,
+  maxWidth: { xs: '100%', md: '60%' },
 };
 
 const imageTitle = {
@@ -37,6 +37,21 @@ const imageAuthor = {
 
 const image = {
   borderRadius: '1rem',
+  maxWidth: '100%',
+};
+
+const imageList = {
+  display: 'flex',
+  maxWidth: '100%',
+  flexWrap: 'wrap',
+  gap: '30px',
+  justifyContent: 'center',
+  marginTop: '2rem',
+};
+
+const imageItem = {
+  maxWidth: { xs: '100%', md: '30%' },
+  minWidth: { xs: '100%', md: '500px' },
 };
 
 const styles = {
@@ -46,7 +61,9 @@ const styles = {
   subtitle,
   imageTitle,
   imageAuthor,
-  image
+  image,
+  imageList,
+  imageItem
 
 };
 

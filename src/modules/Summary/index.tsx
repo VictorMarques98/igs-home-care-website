@@ -24,6 +24,12 @@ const services = [
     linkText: '#gardens',
     image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
   },
+  {
+    title: 'Gardens',
+    description: 'Get expert advice on how to design a garden.',
+    linkText: '#gardens',
+    image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
+  },
 ];
 
 const Summary = () => {

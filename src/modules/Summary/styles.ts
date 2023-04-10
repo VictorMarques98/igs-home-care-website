@@ -32,7 +32,7 @@ const container = {
   justifyContent: 'center ',
   gap: { xs: "1.5rem", md: "3rem" },
   width: '100%',
-  padding: { xs: "1.5rem", md: "3rem 2rem" },
+  padding: { xs: "1.5rem", md: "2rem" },
 };
 
 const service = {

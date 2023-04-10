@@ -17,9 +17,6 @@ import styles from './styles';
 const pages = ["Home", "About", "Services", "Gallery", "Reviews"];
 
 function Header() {
-  // const trigger = useScrollTrigger();
-
-  // console.log(trigger)
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -35,81 +32,99 @@ function Header() {
     setAnchorElNav(null);
   };
 
+  const ScrollHandler = (props:any) => {
+    const trigger = useScrollTrigger({
+      disableHysteresis: true,
+      threshold: 0,
+      target: props.window ? window() : undefined
+    });
+
+    return React.cloneElement(props.children, {
+      style: {
+        backgroundColor: trigger && "#fff",
+        color: trigger && "#000",
+        boxShadow: trigger && "black 0px 8px 15px -10px"
+      }
+    });
+  };
+
 
   return (
-    <AppBar
-      position="fixed"
-      sx={styles.appBar}
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={styles.toolbar}>
-          <Typography
-            variant="h6"
-            component="a"
-            href="/"
-            sx={styles.logoName}
-          >
-            IGS HOME CARE
-          </Typography>
-          <Box sx={styles.menuContainer}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
+    <ScrollHandler>
+      <AppBar
+        position="fixed"
+        sx={styles.appBar}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters sx={styles.toolbar}>
+            <Typography
+              variant="h6"
+              component="a"
+              href="/"
+              sx={styles.logoName}
             >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="left"
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-            >
-              <List
-                sx={styles.menuContainerMobile}
+              IGS HOME CARE
+            </Typography>
+            <Box sx={styles.menuContainer}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
               >
-                {pages.map((page) => (
-                  <ListItem
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={styles.listItem}
-                  >
-                    <Typography
-                      textAlign="center"
-                      sx={styles.listItemText}
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                anchor="left"
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+              >
+                <List
+                  sx={styles.menuContainerMobile}
+                >
+                  {pages.map((page) => (
+                    <ListItem
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={styles.listItem}
                     >
-                      {page}
-                    </Typography>
-                  </ListItem>
-                ))}
-              </List>
-            </Drawer>
-          </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href=""
-            sx={styles.logoNameMobile}
-          >
-            IGS HOME CARE
-          </Typography>
-          <Box sx={styles.menuWrapper}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={styles.menuItem}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                      <Typography
+                        textAlign="center"
+                        sx={styles.listItemText}
+                      >
+                        {page}
+                      </Typography>
+                    </ListItem>
+                  ))}
+                </List>
+              </Drawer>
+            </Box>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href=""
+              sx={styles.logoNameMobile}
+            >
+              IGS HOME CARE
+            </Typography>
+            <Box sx={styles.menuWrapper}>
+              {pages.map((page) => (
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={styles.menuItem}
+                >
+                  {page}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </ScrollHandler>
   );
 };
 
