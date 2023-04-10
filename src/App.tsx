@@ -1,5 +1,7 @@
 import { Header } from './components/Header'
-import { Gallery, Introduction, Summary } from './modules'
+import { Gallery, Introduction, Summary, About } from './modules'
+import { FloatingActionButton } from './components/FloatingButton'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
         <Introduction />
         <Summary />
         <Gallery />
+        <About />
+        <FloatingActionButton />
       </main>
+      <Footer />
     </>
   )
 }
