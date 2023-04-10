@@ -1,9 +1,18 @@
 import React from 'react';
 
-import { Box, Container, Link, Typography } from "@mui/material";
+import styles from './styles';
+
+import { motion } from 'framer-motion';
+import { textVariant } from '../../utils/motion';
+
+import { 
+  Box, 
+  Container, 
+  Link, 
+  Typography 
+} from "@mui/material";
 import OtherHousesOutlinedIcon from '@mui/icons-material/OtherHousesOutlined';
 
-import styles from './styles';
 
 const services = [
   {
@@ -35,8 +44,12 @@ const services = [
 const Summary = () => {
   return (
     <Box
-      component="section"
+      component={motion.section}
       sx={styles.section}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ amount: 0.25 }}
+      variants={textVariant(1)}
     >
       <Container
         sx={styles.content}
@@ -85,6 +98,6 @@ const Summary = () => {
       </Container>
     </Box>
   )
-}
+};
 
 export { Summary };

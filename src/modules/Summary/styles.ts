@@ -1,11 +1,10 @@
 
 const section = {
   margin: '0 auto',
-  // border: ' solid 5px #2a7d2e',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  marginTop: { xs: "0", md: "-8rem" },
+  marginTop: { xs: '0', md: '-8rem' },
 };
 
 const content = {
@@ -15,11 +14,11 @@ const content = {
   alignItems: 'space-between',
   justifyContent: 'flex-start',
   boxShadow: '1px 20px 17px -5px #00000010',
-  margin: { xs: "0", md: "0 2rem" },
+  margin: { xs: '0', md: '0 2rem' },
 };
 
 const borderTop = {
-  display: { xs: "none", md: "flex" },
+  display: { xs: 'none', md: 'flex' },
   marginTop: '-1.25rem',
   width: '100%',
   height: '1.875rem',
@@ -27,19 +26,19 @@ const borderTop = {
 
 const container = {
   display: 'flex',
-  flexDirection: { xs: "column", md: "row" },
+  flexDirection: { xs: 'column', md: 'row' },
   alignItems: 'center',
   justifyContent: 'center ',
-  gap: { xs: "1.5rem", md: "3rem" },
+  gap: { xs: '1.5rem', md: '3rem' },
   width: '100%',
-  padding: { xs: "1.5rem", md: "2rem" },
+  padding: { xs: '1.5rem', md: '2rem' },
 };
 
 const service = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  maxWidth:  { xs: "100%", md: "20%" },
+  maxWidth:  { xs: '100%', md: '20%' },
   gap: '1rem',
 };
 
@@ -49,7 +48,7 @@ const serviceImage = {
 };
 
 const serviceTitle = {
-  fontSize: { xs: "1.5rem", md: "1.625rem" },
+  fontSize: { xs: '1.5rem', md: '1.625rem' },
   color: '#0b3d2c',
   fontWeight: '300',
 };
@@ -68,7 +67,7 @@ const serviceLink = {
 const divider = {
   width: '0.0625rem',
   backgroundColor: '#0000002b',
-  height: { xs: "2rem", md: "10rem" },
+  height: { xs: '2rem', md: '10rem' },
 };
 
 
