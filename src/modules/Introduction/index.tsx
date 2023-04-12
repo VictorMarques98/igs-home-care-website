@@ -37,7 +37,7 @@ const Introduction = () => {
             alt="igs home care logo"
             src="https://landscaping.vamtam.com/wp-content/uploads/2017/09/leaves.svg"
           />
-          Garden Based in NY
+          Home Gardening
         </Typography>
         <Typography
           variant="subtitle1"
@@ -45,7 +45,7 @@ const Introduction = () => {
           component={motion.p}
           variants={simpleFadeIn(1)}
         >
-          Provides hassle-free backyard transformations with artistic solutions.
+          Your lawn and landscape cared for the way they should be!
         </Typography>
         <Box
           sx={styles.actionsContainer}

@@ -7,12 +7,11 @@ const appBar = {
 const logo = {
   marginRight: '1rem',
   maxWidth: '4.375rem',
-  display: { xs: 'none', md: 'inline-block' },
+  // display: { xs: 'none', md: 'inline-block' },
 };
 
 const logoName = {
   mr: 2,
-  display: { xs: 'none', md: 'flex' },
   fontFamily: 'monospace',
   fontWeight: 700,
   color: 'inherit',
@@ -20,7 +19,8 @@ const logoName = {
 };
 
 const toolbar ={
-  height: '90px'
+  height: '90px',
+  justifyContent: 'center',
 };
 
 const menuContainer = {
@@ -62,7 +62,7 @@ const menuItem = {
   fontSize: '1rem',
   margin: 0,
   padding: '0 1rem',
-  fontWeight: 500,
+  fontWeight: 300,
   '&:hover': {
     color: '#d6d2d2',
     backgroundColor: 'transparent',

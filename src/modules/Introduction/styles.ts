@@ -5,7 +5,7 @@ const section = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.52), rgba(12, 39, 19, 0.80)), url(${IntroImg})`,
+  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.44), rgba(22, 100, 42, 0.72)), url(${IntroImg})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
@@ -38,7 +38,7 @@ const logo = {
 
 const subtitle = {
   fontSize: { xs: "1rem", md: "1.5rem" },
-  fontWeight: 700,
+  fontWeight: 300,
   color: '#fff',
   textAlign: 'center',
 };
@@ -46,7 +46,7 @@ const subtitle = {
 const actionsContainer = {
   marginTop: '2rem',
   display: 'flex',
-  gap: '2rem',
+  gap: { xs: "1rem", md: "2rem" },
   flexWrap: 'wrap',
   justifyContent: 'center',
   alignItems: 'center',
@@ -73,6 +73,7 @@ const ctaButton = {
   padding: '0.8rem 2rem',
   borderRadius: '1.6rem',
   textTransform: 'inherit',
+  display: { xs: 'none', md: 'inline-block'},
   '&:hover': {
     backgroundColor: '#2a7d2e',
     color: '#fff',

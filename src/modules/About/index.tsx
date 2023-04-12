@@ -44,9 +44,8 @@ const About = () => {
         </Box>
         <Box
           component="img"
-          src=""
-          srcSet="./5.jpeg"
-          alt=""
+          srcSet="./5.webp"
+          alt="IGS Company"
           loading="lazy"
           sx={styles.image}
         />

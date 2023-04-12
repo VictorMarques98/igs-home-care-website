@@ -68,7 +68,7 @@ function Header() {
           >
             IGS HOME CARE
           </Typography>
-          <Box sx={styles.menuContainer}>
+          {/* <Box sx={styles.menuContainer}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -104,29 +104,19 @@ function Header() {
                 ))}
               </List>
             </Drawer>
-          </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={styles.logoNameMobile}
-            style={trigger ? { color: '#2a7d2e' } : {}}
-          >
-            IGS HOME CARE
-          </Typography>
-          <Box sx={styles.menuWrapper}>
+          </Box> */}
+          {/* <Box sx={styles.menuWrapper}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={styles.menuItem}
-                style={trigger ? { color: '#2a7d2e' } : {}}
+                style={trigger ? { color: '#2a7d2e', fontWeight: '500' } : {}}
               >
                 {page}
               </Button>
             ))}
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

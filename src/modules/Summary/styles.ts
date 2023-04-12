@@ -27,11 +27,11 @@ const borderTop = {
 const container = {
   display: 'flex',
   flexDirection: { xs: 'column', md: 'row' },
-  alignItems: 'center',
-  justifyContent: 'center ',
+  alignItems: { xs: 'center', md: 'flex-start' },
+  justifyContent: 'center',
   gap: { xs: '1.5rem', md: '3rem' },
   width: '100%',
-  padding: { xs: '1.5rem', md: '2rem' },
+  padding: { xs: '1.5rem', md: '2rem 3rem' },
 };
 
 const service = {
@@ -51,6 +51,7 @@ const serviceTitle = {
   fontSize: { xs: '1.5rem', md: '1.625rem' },
   color: '#0b3d2c',
   fontWeight: '300',
+  textAlign: 'center'
 };
 
 const serviceDescription = {

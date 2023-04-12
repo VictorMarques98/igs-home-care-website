@@ -8,35 +8,29 @@ import { simpleFadeIn } from '../../utils/motion';
 import {
   Box,
   Container,
-  Link,
   Typography
 } from "@mui/material";
 import OtherHousesOutlinedIcon from '@mui/icons-material/OtherHousesOutlined';
 
-
 const services = [
   {
-    title: 'Gardens',
+    title: 'Lawn mowing',
     description: 'Get expert advice on how to design a garden.',
-    linkText: '#gardens',
     image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
   },
   {
-    title: 'Gardens',
+    title: 'Hedging and pruning',
     description: 'Get expert advice on how to design a garden.',
-    linkText: '#gardens',
     image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
   },
   {
-    title: 'Gardens',
+    title: 'Weed control',
     description: 'Get expert advice on how to design a garden.',
-    linkText: '#gardens',
     image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
   },
   {
-    title: 'Gardens',
+    title: 'Rubbish removal (green waste)',
     description: 'Get expert advice on how to design a garden.',
-    linkText: '#gardens',
     image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
   },
 ];
@@ -82,12 +76,6 @@ const Summary = () => {
                 >
                   {service.description}
                 </Typography>
-                <Link
-                  sx={styles.serviceLink}
-                  href={`#${service.linkText}`}
-                >
-                  Read more
-                </Link>
               </Box>
               {index !== services.length - 1 &&
                 <Box sx={styles.divider} />
