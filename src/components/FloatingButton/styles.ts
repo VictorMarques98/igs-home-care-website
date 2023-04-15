@@ -11,7 +11,13 @@ const button = {
     color: 'primary.contrastText',
     '&:hover': {
       backgroundColor: '#23d12f',
-    }
+    },
+    padding: '0.625rem 1.25rem',
+    alignItems: 'center',
+    display: 'flex',
+    borderRadius: '1.875rem',
+    justifyContent: 'center',
+    boxShadow: '0px 0px 1rem #0000007d',
 };
 
 const values = {

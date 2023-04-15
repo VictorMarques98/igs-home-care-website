@@ -1,11 +1,9 @@
-import IntroImg from "../../assets/Introimg.jpeg";
-
 const section = {
   height: '100vh',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.44), rgba(22, 100, 42, 0.72)), url(${IntroImg})`,
+  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.44), rgba(22, 100, 42, 0.72)), url(/6.webp)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
@@ -67,6 +65,8 @@ const scrollButton = {
 
 const ctaButton = {
   fontSize: '0.9rem',
+  lineHeight: '1.75',
+  transition: 'all .5s',
   border: 0,
   background: '#fff',
   color: '#2a7d2e',
@@ -77,7 +77,8 @@ const ctaButton = {
   '&:hover': {
     backgroundColor: '#2a7d2e',
     color: '#fff',
-  }
+  },
+  textDecoration: 'none'
 };
 
 const styles = {

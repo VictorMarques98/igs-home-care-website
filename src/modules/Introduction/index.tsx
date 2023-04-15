@@ -2,7 +2,8 @@ import {
   Box,
   Container,
   Typography,
-  Button
+  Button,
+  Link
 } from "@mui/material";
 
 import { motion } from 'framer-motion';
@@ -12,6 +13,12 @@ import { simpleFadeIn } from '../../utils/motion';
 import styles from './styles';
 
 const Introduction = () => {
+
+  function scrollToSummary() {
+    const summary = document.getElementById('summary');
+    summary?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
   return (
     <Box
       component="section"
@@ -54,15 +61,17 @@ const Introduction = () => {
         >
           <Button
             sx={styles.scrollButton}
-            variant="outlined">
+            variant="outlined"
+            onClick={scrollToSummary}
+          >
             About us
           </Button>
-          <Button
+          <Link
+            href="sms:/+0421697161/?body=/Hello, I would like to request an estimate/"
             sx={styles.ctaButton}
-            variant="contained"
           >
             Request an estimate
-          </Button>
+          </Link>
         </Box>
 
       </Container>

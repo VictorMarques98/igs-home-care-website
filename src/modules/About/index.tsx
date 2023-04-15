@@ -34,12 +34,15 @@ const About = () => {
             variant="body1"
             sx={styles.body}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam auctor, nisl eget ultricies tincidunt, nunc
-            justo ultricies nunc, eget ultricies lorem ipsum
-            euismod nunc. Sed euismod, nisl eget ultricies
-            tincidunt, nunc justo ultricies nunc, eget ultricies
-            lorem ipsum euismod nunc. Sed euismod, nisl eget
+            We are a professional gardening service company that offers a 
+            comprehensive range of services, including landscape design, 
+            lawn maintenance, seasonal clean-ups, and garden renovation. 
+            Our experienced team of professionals is dedicated to delivering 
+            top-notch services that meet your specific needs and preferences. 
+            We work closely with you to create beautiful outdoor spaces that 
+            add value to your property and enhance your quality of life. 
+            Contact us today to learn more about our services and how we 
+            can help bring your outdoor space to life!
           </Typography>
         </Box>
         <Box

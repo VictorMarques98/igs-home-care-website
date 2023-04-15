@@ -34,6 +34,7 @@ const imageAuthor = {
 const image = {
   borderRadius: '1rem',
   maxWidth: '100%',
+  width: '100%',
 };
 
 const imageList = {
@@ -46,8 +47,9 @@ const imageList = {
 };
 
 const imageItem = {
-  maxWidth: { xs: '600px', md: '30%' },
+  maxWidth: { xs: '100%', md: '30%' },
   minWidth: { xs: 'inherit', md: '500px' },
+  width: '100%',
 };
 
 const styles = {

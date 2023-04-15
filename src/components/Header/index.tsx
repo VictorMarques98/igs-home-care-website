@@ -20,22 +20,11 @@ import { navVariants } from "../../utils/motion";
 const pages = ["Home", "About", "Services", "Gallery", "Reviews"];
 
 function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
     target: window ? window : undefined
   });
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
 
   return (
     <AppBar
@@ -57,7 +46,7 @@ function Header() {
             component="img"
             sx={styles.logo}
             alt="igs home care logo"
-            src={trigger ? "/logo.png" : "/logo-white.png"}
+            src={trigger ? "/logo.webp" : "/logo-white.webp"}
           />
           <Typography
             variant="h6"

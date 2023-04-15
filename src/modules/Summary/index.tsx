@@ -10,28 +10,27 @@ import {
   Container,
   Typography
 } from "@mui/material";
-import OtherHousesOutlinedIcon from '@mui/icons-material/OtherHousesOutlined';
 
 const services = [
   {
     title: 'Lawn mowing',
-    description: 'Get expert advice on how to design a garden.',
-    image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
+    description: 'Expert lawn mowing for your yard',
+    image: "/i-1.webp",
   },
   {
     title: 'Hedging and pruning',
-    description: 'Get expert advice on how to design a garden.',
-    image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
+    description: 'Professional hedge and tree trimming.',
+    image: "/i-2.webp",
   },
   {
     title: 'Weed control',
-    description: 'Get expert advice on how to design a garden.',
-    image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
+    description: 'Effective weed removal and prevention.',
+    image: "/i-3.webp",
   },
   {
     title: 'Rubbish removal (green waste)',
-    description: 'Get expert advice on how to design a garden.',
-    image: <OtherHousesOutlinedIcon sx={styles.serviceImage} />,
+    description: 'Quick and reliable rubbish removal.',
+    image: "/i-4.webp",
   },
 ];
 
@@ -44,6 +43,7 @@ const Summary = () => {
       whileInView="show"
       viewport={{ amount: 0.25 }}
       variants={simpleFadeIn(1)}
+      id="summary"
     >
       <Container
         sx={styles.content}
@@ -63,7 +63,11 @@ const Summary = () => {
                 sx={styles.service}
                 key={service.title}
               >
-                {service.image}
+                <Box
+                  sx={styles.serviceImage}
+                  component={motion.img}
+                  src={service.image}
+                  />
                 <Typography
                   variant="h3"
                   sx={styles.serviceTitle}

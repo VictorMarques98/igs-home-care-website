@@ -20,13 +20,13 @@ const Footer = () => {
             sx={styles.contactLink}
             href=""
           >
-            Call us: 99999099999
+            Call us: 0421697161
           </Link>
           <Typography
             variant="body1"
             sx={styles.text}
           >
-            New York, USA – 1060 Firs Avenue, Muswell Hill
+            6 Etelka way, Arundel QLD 4214
           </Typography>
         </Box>
         <Box sx={styles.socialContainer}>
