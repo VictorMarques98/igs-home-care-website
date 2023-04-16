@@ -1,23 +1,17 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+
 import { useScrollTrigger } from "@mui/material";
 
 import { motion } from 'framer-motion';
 
 import styles from './styles';
-import { navVariants } from "../../utils/motion";
 
-const pages = ["Home", "About", "Services", "Gallery", "Reviews"];
+import { email } from "../../utils/constants";
+import { navVariants } from "../../utils/motion";
 
 function Header() {
   const trigger = useScrollTrigger({
@@ -56,6 +50,15 @@ function Header() {
             style={trigger ? { color: '#2a7d2e' } : {}}
           >
             IGS HOME CARE
+          </Typography>
+          <Typography
+            variant="h6"
+            component="a"
+            href={email}
+            sx={styles.callNumber}
+            style={trigger ? { color: '#2a7d2e' } : {}}
+          >
+            Call Us: +0421697161
           </Typography>
           {/* <Box sx={styles.menuContainer}>
             <IconButton

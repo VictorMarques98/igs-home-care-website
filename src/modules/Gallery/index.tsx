@@ -21,8 +21,8 @@ const Gallery = () => {
           variant="subtitle1"
           sx={styles.subtitle}
         >
-          We at The Gardeny are proud to offer carefully designed
-          landscapes crafted to suit our commercial clients’
+          We are proud to offer carefully designed
+          landscapes crafted to suit our clients’
           preferences while prioritizing sustainability.
         </Typography>
         <Box

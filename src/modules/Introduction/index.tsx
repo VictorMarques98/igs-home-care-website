@@ -10,14 +10,15 @@ import { motion } from 'framer-motion';
 
 import { simpleFadeIn } from '../../utils/motion';
 
+import { email } from '../../utils/constants';
+
 import styles from './styles';
 
 const Introduction = () => {
-
   function scrollToSummary() {
     const summary = document.getElementById('summary');
     summary?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
+  };
 
   return (
     <Box
@@ -44,7 +45,7 @@ const Introduction = () => {
             alt="igs home care logo"
             src="https://landscaping.vamtam.com/wp-content/uploads/2017/09/leaves.svg"
           />
-          Home Gardening
+          Home Off Gardening
         </Typography>
         <Typography
           variant="subtitle1"
@@ -67,8 +68,8 @@ const Introduction = () => {
             About us
           </Button>
           <Link
-            href="sms:/+0421697161/?body=/Hello, I would like to request an estimate/"
             sx={styles.ctaButton}
+            href={email}
           >
             Request an estimate
           </Link>

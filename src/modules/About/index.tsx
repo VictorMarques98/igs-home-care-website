@@ -28,14 +28,14 @@ const About = () => {
             variant="subtitle1"
             sx={styles.subtitle}
           >
-            Gardeny offers a full-service garden design to clients.
+            IGS offers a full-service garden design to clients.
           </Typography>
           <Typography
             variant="body1"
             sx={styles.body}
           >
             We are a professional gardening service company that offers a 
-            comprehensive range of services, including landscape design, 
+            comprehensive range of services, including mulching, planting,
             lawn maintenance, seasonal clean-ups, and garden renovation. 
             Our experienced team of professionals is dedicated to delivering 
             top-notch services that meet your specific needs and preferences. 
