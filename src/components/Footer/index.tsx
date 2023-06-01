@@ -18,7 +18,7 @@ const Footer = () => {
         <Box sx={styles.contactContainer}>
           <Link
             sx={styles.contactLink}
-            href="tel:+0421697161"
+            href="/redirecting"
           >
             Call us: 0421697161
           </Link>

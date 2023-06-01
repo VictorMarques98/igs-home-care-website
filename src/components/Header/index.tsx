@@ -54,61 +54,12 @@ function Header() {
           <Typography
             variant="h6"
             component="a"
-            href={email}
+            href="/redirecting"
             sx={styles.callNumber}
             style={trigger ? { color: '#2a7d2e' } : {}}
           >
             Call Us: +0421697161
           </Typography>
-          {/* <Box sx={styles.menuContainer}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-              style={trigger ? { color: '#2a7d2e' } : {}}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="left"
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-            >
-              <List
-                sx={styles.menuContainerMobile}
-              >
-                {pages.map((page) => (
-                  <ListItem
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={styles.listItem}
-                  >
-                    <Typography
-                      textAlign="center"
-                      sx={styles.listItemText}
-                    >
-                      {page}
-                    </Typography>
-                  </ListItem>
-                ))}
-              </List>
-            </Drawer>
-          </Box> */}
-          {/* <Box sx={styles.menuWrapper}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={styles.menuItem}
-                style={trigger ? { color: '#2a7d2e', fontWeight: '500' } : {}}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

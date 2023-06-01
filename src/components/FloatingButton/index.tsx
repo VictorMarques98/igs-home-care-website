@@ -16,7 +16,7 @@ function FloatingActionButton() {
     >
       <Link
         sx={styles.button}
-        href={isTablet ? "tel:+0421697161" : email}
+        href="/redirecting"
       >
         <CallIcon sx={{ mr: 1 }} />
         Contact us

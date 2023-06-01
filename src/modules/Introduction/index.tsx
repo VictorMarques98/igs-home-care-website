@@ -45,7 +45,7 @@ const Introduction = () => {
             alt="igs home care logo"
             src="https://landscaping.vamtam.com/wp-content/uploads/2017/09/leaves.svg"
           />
-          Home Off Gardening
+          Home Of Gardening
         </Typography>
         <Typography
           variant="subtitle1"
@@ -69,7 +69,7 @@ const Introduction = () => {
           </Button>
           <Link
             sx={styles.ctaButton}
-            href={email}
+            href="/redirecting"
           >
             Request an estimate
           </Link>
