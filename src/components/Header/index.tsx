@@ -53,7 +53,7 @@ function Header() {
             component="a"
             href="/"
             sx={styles.logoName}
-            style={trigger ? { color: '#2a7d2e' } : {}}
+            style={trigger ? { color: '#1ec2e7' } : {}}
           >
             IGS HOME CARE
           </Typography>
