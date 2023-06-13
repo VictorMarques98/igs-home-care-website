@@ -6,11 +6,11 @@ import {
   Link
 } from "@mui/material";
 
+import { Link as RouterLink } from "react-router-dom";
+
 import { motion } from 'framer-motion';
 
 import { simpleFadeIn } from '../../utils/motion';
-
-import { email } from '../../utils/constants';
 
 import styles from './styles';
 
@@ -45,7 +45,7 @@ const Introduction = () => {
             alt="igs home care logo"
             src="https://landscaping.vamtam.com/wp-content/uploads/2017/09/leaves.svg"
           />
-          Home Of Gardening
+          Home of Gardening
         </Typography>
         <Typography
           variant="subtitle1"
@@ -69,7 +69,7 @@ const Introduction = () => {
           </Button>
           <Link
             sx={styles.ctaButton}
-            href="/redirecting"
+            href="https://igshomecare.com.au/redirecting/"
           >
             Request an estimate
           </Link>
