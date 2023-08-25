@@ -18,6 +18,14 @@ const logoName = {
   textDecoration: 'none',
 };
 
+const callNumber = {
+  position: 'absolute',
+  right: '1rem',
+  fontSize: '1.1rem',
+  color: 'inherit',
+  display: { xs: 'none', md: 'block' },
+}
+
 const toolbar ={
   height: '90px',
   justifyContent: 'center',
@@ -87,7 +95,6 @@ const listItem = {
 const listItemText = {
   fontWeight: 600,
   fontSize: '1.2rem',
-
 };
 
 const styles = {
@@ -102,7 +109,8 @@ const styles = {
   menuContainerMobile,
   listItem,
   listItemText,
-  logo
+  logo,
+  callNumber
 };
 
 export default styles;

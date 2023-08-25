@@ -1,19 +1,18 @@
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { Header } from './components/Header'
-import { Gallery, Introduction, Summary, About } from './modules'
-import { FloatingActionButton } from './components/FloatingButton'
 import { Footer } from './components/Footer'
+// import Home from "./pages/Home";
+import Redirecting from "./pages/Redirecting";
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <Introduction />
-        <Summary />
-        <Gallery />
-        <About />
-        <FloatingActionButton />
-      </main>
+      <Routes>
+        {/* <Route index element={<Home />} /> */}
+        <Route index element={<Redirecting />} />
+        {/* <Route path="redirecting" element={<Redirecting />} /> */}
+      </Routes>
       <Footer />
     </>
   )

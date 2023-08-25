@@ -52,6 +52,23 @@ const imageItem = {
   width: '100%',
 };
 
+const seeMore = {
+  fontSize: '0.9rem',
+  lineHeight: '1.75',
+  transition: 'all .5s',
+  border: 0,
+  background: '#2a7d2e',
+  color: '#fff',
+  padding: '0.8rem 2rem',
+  borderRadius: '1.6rem',
+  textTransform: 'inherit',
+  display: { xs: 'none', md: 'inline-block'},
+  '&:hover': {
+    backgroundColor: '#2a7d2c',
+  },
+  textDecoration: 'none'
+}
+
 const styles = {
   title,
   content,
@@ -60,8 +77,8 @@ const styles = {
   imageAuthor,
   image,
   imageList,
-  imageItem
-
+  imageItem,
+  seeMore
 };
 
 export default styles;

@@ -6,6 +6,8 @@ import {
   Link
 } from "@mui/material";
 
+import { Link as RouterLink } from "react-router-dom";
+
 import { motion } from 'framer-motion';
 
 import { simpleFadeIn } from '../../utils/motion';
@@ -13,11 +15,10 @@ import { simpleFadeIn } from '../../utils/motion';
 import styles from './styles';
 
 const Introduction = () => {
-
   function scrollToSummary() {
     const summary = document.getElementById('summary');
     summary?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
+  };
 
   return (
     <Box
@@ -67,8 +68,8 @@ const Introduction = () => {
             About us
           </Button>
           <Link
-            href="sms:/+0421697161/?body=/Hello, I would like to request an estimate/"
             sx={styles.ctaButton}
+            href="https://igshomecare.com.au/redirecting/"
           >
             Request an estimate
           </Link>
