@@ -1,23 +1,17 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+
 import { useScrollTrigger } from "@mui/material";
 
 import { motion } from 'framer-motion';
 
 import styles from './styles';
-import { navVariants } from "../../utils/motion";
 
-const pages = ["Home", "About", "Services", "Gallery", "Reviews"];
+import { email } from "../../utils/constants";
+import { navVariants } from "../../utils/motion";
 
 function Header() {
   const trigger = useScrollTrigger({
@@ -57,55 +51,15 @@ function Header() {
           >
             IGS HOME CARE
           </Typography>
-          {/* <Box sx={styles.menuContainer}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-              style={trigger ? { color: '#2a7d2e' } : {}}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="left"
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-            >
-              <List
-                sx={styles.menuContainerMobile}
-              >
-                {pages.map((page) => (
-                  <ListItem
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={styles.listItem}
-                  >
-                    <Typography
-                      textAlign="center"
-                      sx={styles.listItemText}
-                    >
-                      {page}
-                    </Typography>
-                  </ListItem>
-                ))}
-              </List>
-            </Drawer>
-          </Box> */}
-          {/* <Box sx={styles.menuWrapper}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={styles.menuItem}
-                style={trigger ? { color: '#2a7d2e', fontWeight: '500' } : {}}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box> */}
+          <Typography
+            variant="h6"
+            component="a"
+            href="/redirecting"
+            sx={styles.callNumber}
+            style={trigger ? { color: '#2a7d2e' } : {}}
+          >
+            Call Us: +0421697161
+          </Typography>
         </Toolbar>
       </Container>
     </AppBar>
