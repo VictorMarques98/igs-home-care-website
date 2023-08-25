@@ -1,6 +1,5 @@
 import { Box, Button, Container, Link, Typography } from "@mui/material";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import styles from './styles';
 import { useState } from "react";
 
@@ -53,9 +52,9 @@ const Gallery = () => {
               key={item}
             >
               <LazyLoadImage
-                src={`${item}?w=248&fit=crop&auto=format`}
-                srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                placeholderSrc="asdasd"
+                src={`${item}`}
+                srcSet={`${item}`}
+                placeholderSrc="garden-service"
                 effect="blur"
                 alt="Image of service from IGS Company"
                 loading="lazy"

@@ -21,9 +21,16 @@ const button = {
     textDecoration: 'none'
 };
 
+const link = {
+  color: '#fff',
+  display: 'flex',
+  alignItems: 'center',
+}
+
 const values = {
   wrapper,
-  button
+  button,
+  link
 };
 
 export default values;

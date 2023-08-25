@@ -1,10 +1,9 @@
 {
   "name": "igs-home-care-website",
   "private": true,
-  "homepage": "/services",
+  "homepage": "/lp-1",
   "version": "0.1.0",
   "type": "module",
-  "homepage": "/redirecting",
   "scripts": {
     "dev": "vite --port 3000 --base=/lp-1",
     "build": "tsc && vite build --base=/lp-1",

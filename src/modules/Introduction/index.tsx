@@ -5,14 +5,10 @@ import {
   Button,
   Link
 } from "@mui/material";
-
-import { Link as RouterLink } from "react-router-dom";
-
 import { motion } from 'framer-motion';
-
 import { simpleFadeIn } from '../../utils/motion';
-
 import styles from './styles';
+import { Link as RouterLink } from 'react-router-dom'
 
 const Introduction = () => {
   function scrollToSummary() {
@@ -69,7 +65,8 @@ const Introduction = () => {
           </Button>
           <Link
             sx={styles.ctaButton}
-            href="https://igshomecare.com.au/redirecting/"
+            to="/redirecting"
+            component={RouterLink}
           >
             Request an estimate
           </Link>

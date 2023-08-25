@@ -1,10 +1,7 @@
 import React from 'react';
-
 import styles from './styles';
-
 import { motion } from 'framer-motion';
 import { simpleFadeIn } from '../../utils/motion';
-
 import {
   Box,
   Container,
@@ -15,22 +12,22 @@ const services = [
   {
     title: 'Lawn mowing',
     description: 'Expert lawn mowing for your yard',
-    image: "/i-4.webp",
+    image: "/lp-1/i-4.webp",
   },
   {
     title: 'Hedging and pruning',
     description: 'Professional hedge and tree trimming.',
-    image: "/i-1.webp",
+    image: "/lp-1/i-1.webp",
   },
   {
     title: 'Weed control',
     description: 'Effective weed removal and prevention.',
-    image: "/i-3.webp",
+    image: "/lp-1/i-3.webp",
   },
   {
     title: 'Rubbish removal (green waste)',
     description: 'Quick and reliable rubbish removal.',
-    image: "/i-2.webp",
+    image: "/lp-1/i-2.webp",
   },
 ];
 

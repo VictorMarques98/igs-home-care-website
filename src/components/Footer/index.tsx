@@ -2,6 +2,7 @@ import { Box, Container, Typography, Link } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
+import { Link as RouterLink } from 'react-router-dom'
 
 import styles from './styles';
 
@@ -18,7 +19,8 @@ const Footer = () => {
         <Box sx={styles.contactContainer}>
           <Link
             sx={styles.contactLink}
-            href="https://igshomecare.com.au/redirecting/"
+            component={RouterLink}
+            to="/redirecting"
           >
             Call us: 0421697161
           </Link>

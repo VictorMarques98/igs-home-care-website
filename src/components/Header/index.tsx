@@ -3,15 +3,11 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-
 import { useScrollTrigger } from "@mui/material";
-
 import { motion } from 'framer-motion';
-
 import styles from './styles';
-
-import { email } from "../../utils/constants";
 import { navVariants } from "../../utils/motion";
+import { Link as RouterLink } from 'react-router-dom'
 
 function Header() {
   const trigger = useScrollTrigger({
@@ -40,12 +36,12 @@ function Header() {
             component="img"
             sx={styles.logo}
             alt="igs home care logo"
-            src={trigger ? "/logo.webp" : "/logo-white.webp"}
+            src={trigger ? "/lp-1/logo.webp" : "/lp-1/logo-white.webp"}
           />
           <Typography
             variant="h6"
-            component="a"
-            href="/"
+            component={RouterLink}
+            to="/"
             sx={styles.logoName}
             style={trigger ? { color: '#1ec2e7' } : {}}
           >
@@ -53,10 +49,10 @@ function Header() {
           </Typography>
           <Typography
             variant="h6"
-            component="a"
-            href="/redirecting"
+            to="/redirecting"
             sx={styles.callNumber}
             style={trigger ? { color: '#2a7d2e' } : {}}
+            component={RouterLink}
           >
             Call Us: +0421697161
           </Typography>
