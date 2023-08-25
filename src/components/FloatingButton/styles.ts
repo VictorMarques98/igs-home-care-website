@@ -18,6 +18,7 @@ const button = {
     borderRadius: '1.875rem',
     justifyContent: 'center',
     boxShadow: '0px 0px 1rem #0000007d',
+    textDecoration: 'none'
 };
 
 const values = {
