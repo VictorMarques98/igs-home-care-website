@@ -12,22 +12,22 @@ const services = [
   {
     title: 'Lawn mowing',
     description: 'Expert lawn mowing for your yard',
-    image: "/lp-1/i-4.webp",
+    image: "/lp-2/i-4.webp",
   },
   {
     title: 'Hedging and pruning',
     description: 'Professional hedge and tree trimming.',
-    image: "/lp-1/i-1.webp",
+    image: "/lp-2/i-1.webp",
   },
   {
     title: 'Weed control',
     description: 'Effective weed removal and prevention.',
-    image: "/lp-1/i-3.webp",
+    image: "/lp-2/i-3.webp",
   },
   {
     title: 'Rubbish removal (green waste)',
     description: 'Quick and reliable rubbish removal.',
-    image: "/lp-1/i-2.webp",
+    image: "/lp-2/i-2.webp",
   },
 ];
 
@@ -64,7 +64,7 @@ const Summary = () => {
                   sx={styles.serviceImage}
                   component={motion.img}
                   src={service.image}
-                  />
+                />
                 <Typography
                   variant="h3"
                   sx={styles.serviceTitle}

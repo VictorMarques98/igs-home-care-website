@@ -3,7 +3,7 @@ const section = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.44), rgba(22, 100, 42, 0.72)), url(/lp-1/6.webp)`,
+  backgroundImage: `linear-gradient(to bottom, rgba(25, 25, 25, 0.44), rgba(22, 100, 42, 0.72)), url(/lp-2/6.webp)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',

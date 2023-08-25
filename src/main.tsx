@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename='lp-1'>
+      <BrowserRouter basename='lp-2'>
         <App />
       </BrowserRouter>
     </ThemeProvider>

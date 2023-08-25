@@ -36,7 +36,7 @@ function Header() {
             component="img"
             sx={styles.logo}
             alt="igs home care logo"
-            src={trigger ? "/lp-1/logo.webp" : "/lp-1/logo-white.webp"}
+            src={trigger ? "/lp-2/logo.webp" : "/lp-2/logo-white.webp"}
           />
           <Typography
             variant="h6"
