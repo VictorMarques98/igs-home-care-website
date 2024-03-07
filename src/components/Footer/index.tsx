@@ -28,7 +28,7 @@ const Footer = () => {
             variant="body1"
             sx={styles.text}
           >
-            6 Etelka way, Arundel QLD 4214
+            24/217 Brisbane road, Biggera Waters
           </Typography>
         </Box>
         <Box sx={styles.socialContainer}>
