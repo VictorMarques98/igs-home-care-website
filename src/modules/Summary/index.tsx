@@ -12,7 +12,7 @@ const services = [
   {
     title: 'Lawn mowing',
     description: 'Expert lawn mowing for your yard',
-    image: "/lp-2/i-4.webp",
+    image: "/lp-2/i-3.webp",
   },
   {
     title: 'Hedging and pruning',
@@ -22,7 +22,7 @@ const services = [
   {
     title: 'Weed control',
     description: 'Effective weed removal and prevention.',
-    image: "/lp-2/i-3.webp",
+    image: "/lp-2/i-4.webp",
   },
   {
     title: 'Rubbish removal (green waste)',
